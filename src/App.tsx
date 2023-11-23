@@ -42,12 +42,12 @@ function App() {
   };
 
   return (
-    <main className="text-gray-200 font-light p-5 flex flex-col xl:flex-row xl:justify-evenly xl:pt-32 xl:px-96">
+    <main className="text-gray-200 font-light p-5 flex flex-col xl:flex-row xl:justify-evenly xl:pt-32 xl:px-96  mx-10 my-5">
       <div className="">
         <div className="flex flex-row justify-between">
           <img
             onClick={changeColor}
-            className={`${gradient} md:w-32`}
+            className={`${gradient} md:w-32 cursor-pointer`}
             src={brand.src}
             width={brand.width}
             alt="RuannJS Logo"
