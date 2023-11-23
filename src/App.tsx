@@ -160,7 +160,7 @@ function App() {
                   <span>
                     While I may not have formal work experience, I've dedicated
                     three years to self-study and practical projects, building a
-                    strong foundation in front and backend development.
+                    strong foundation in both frontend and backend development.
                   </span>
                 </div>
               )}
