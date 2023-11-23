@@ -42,8 +42,8 @@ function App() {
   };
 
   return (
-    <main className="text-gray-200 font-light p-5 flex flex-col 2xl:flex-row  2xl:pl-20">
-      <div className="2xl:px-96 2xl:py-10">
+    <main className="text-gray-200 font-light p-5 flex flex-col xl:flex-row xl:justify-evenly xl:pt-32 xl:px-96">
+      <div className="">
         <div className="flex flex-row justify-between">
           <img
             onClick={changeColor}
@@ -52,7 +52,7 @@ function App() {
             width={brand.width}
             alt="RuannJS Logo"
           />
-          <div className="flex flex-row gap-10 md:gap-20 items-center mr-2 2xl:ml-16">
+          <div className="flex flex-row gap-10 md:gap-14  items-center mr-2 ml-10">
             {socials.map((social) => {
               if (social.name === "gmail") {
                 return (
@@ -90,27 +90,25 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col gap-10">
-          <span className="text-gray-200 font-black text-5xl md:text-7xl 2xl:mt-10">
+          <span className="text-gray-200 font-black text-5xl md:text-7xl mt-5 2xl:mt-10">
             Welcome.
           </span>
           <div className="flex flex-row items-start gap-3">
-            <span
-              className={`${gradient} pb-56 animate-pulse 2xl:pb-72`}
-            ></span>
+            <span className={`${gradient} pb-56 animate-pulse xl:pb-96`}></span>
             <div className="flex flex-col gap-5 text-sm text-gray-200 font-light">
               {isProject ? (
                 <div className="flex flex-col text-base gap-5 text-slate-200 sm:text-lg md:text-xl">
-                  <span className="">{currentProject?.description}</span>
+                  <span className="w-80">{currentProject?.description}</span>
                   {currentProject?.type === "front" ? (
                     <>
                       <a
                         target="_blank"
-                        className={`${gradient} bg-[length:100%_1px] bg-no-repeat bg-bottom max-w-max hover:text-xl cursor-pointer font-bold sm:text-2xl md:text-3xl`}
+                        className={`${gradient} bg-[length:100%_1px] bg-no-repeat bg-bottom max-w-max  cursor-pointer font-bold sm:text-2xl md:text-3xl`}
                         href={currentProject.link}
                       >
                         View Site
                       </a>
-                      <div className="flex flex-row gap-5 md:gap-10">
+                      <div className="flex flex-row gap-5 flex-wrap md:gap-10">
                         {currentProject.stack.map((stack) => {
                           return (
                             <span
@@ -127,12 +125,12 @@ function App() {
                     <>
                       <a
                         target="_blank"
-                        className={`${gradient} bg-[length:100%_1px] bg-no-repeat bg-bottom max-w-max hover:text-xl cursor-pointer font-bold sm:text-2xl md:text-3xl`}
+                        className={`${gradient} bg-[length:100%_1px] bg-no-repeat bg-bottom max-w-max cursor-pointer font-bold sm:text-2xl md:text-3xl`}
                         href={currentProject?.link}
                       >
                         View Repository
                       </a>
-                      <div className="flex flex-row gap-5 flex-wrap md:gap-10 md:flex-nowrap 2xl:flex-wrap">
+                      <div className="flex flex-row gap-5 flex-wrap md:gap-10  xl:w-96">
                         {currentProject?.stack.map((stack) => {
                           return (
                             <span
@@ -148,7 +146,7 @@ function App() {
                   )}
                 </div>
               ) : (
-                <div className="flex flex-col gap-5 text-sm text-gray-200 font-light sm:text-lg md:text-xl">
+                <div className="flex flex-col gap-5 text-sm text-gray-200 font-light sm:text-lg md:text-xl w-80">
                   <span>
                     My name is Ruann Fagundes. I'm a full-stack developer based
                     in Brazil.
@@ -168,25 +166,25 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="2xl:mr-96 2xl:my-32">
+      <div className="mt-10">
         <span className="text-4xl font-bold text-gray-200 md:text-5xl">
           Projects
         </span>
 
-        <div className="flex flex-col bg-slate-800 mt-5 gap-5 text-gray-200 font-light text-base sm:text-xl md:text-2xl">
+        <div className="bg-slate-800   text-gray-200 font-light text-base sm:text-xl md:text-2xl">
           {projects.map((project) => {
             if (project.type === "front") {
               return (
                 <div
                   key={project.name}
                   onClick={() => changeProject(project)}
-                  className="flex flex-col"
+                  className="flex flex-col mt-5"
                 >
                   <span className="text-xs text-slate-400 sm:text-sm">
                     Frontend
                   </span>
                   <span
-                    className={`${gradient} bg-[length:100%_1px] bg-no-repeat bg-bottom max-w-max   cursor-pointer`}
+                    className={`${gradient} bg-[length:100%_1px] bg-no-repeat bg-bottom max-w-max  cursor-pointer`}
                   >
                     {project.name}
                   </span>
@@ -197,13 +195,13 @@ function App() {
                 <div
                   key={project.name}
                   onClick={() => changeProject(project)}
-                  className="flex flex-col"
+                  className="flex flex-col mt-5"
                 >
                   <span className="text-xs text-slate-400 sm:text-sm">
                     Backend
                   </span>
                   <span
-                    className={`${gradient} bg-[length:100%_1px] bg-no-repeat bg-bottom max-w-max   cursor-pointer`}
+                    className={`${gradient} bg-[length:100%_1px] bg-no-repeat bg-bottom max-w-max cursor-pointer`}
                   >
                     {project.name}
                   </span>
