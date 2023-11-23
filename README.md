@@ -1,5 +1,12 @@
 # Ruann's Portfolio
 
+[Click here](https://ruannjs.vercel.app/) to access my Portfolio
+
+## Technologies Used
+
+-  **ReactJS**
+- **Tailwind**
+
 ## Introduction
 
 Hello! I'm Ruann, a passionate front and backend developer. This is my portfolio, showcasing a collection of projects that highlight my skills and expertise in both frontend and backend development.
