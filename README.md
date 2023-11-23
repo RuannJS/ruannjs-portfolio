@@ -1,30 +1,16 @@
-# React + TypeScript + Vite
+# Ruann's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+Hello! I'm Ruann, a passionate front and backend developer. This is my portfolio, showcasing a collection of projects that highlight my skills and expertise in both frontend and backend development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About Me
 
-## Expanding the ESLint configuration
+I am a dedicated developer with a passion for creating seamless and user-friendly web applications. My skills range from crafting beautiful and responsive user interfaces to designing robust backend architectures. I thrive in collaborative environments and am always eager to take on new challenges.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Feel free to explore my projects and connect with me through the following channels:
 
-- Configure the top-level `parserOptions` property like this:
+- [Linkedin](https://www.linkedin.com/in/ruann-fagundes-423161280/)
+- [Email](mailto:ruanndev@gmail.com)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Thank you for visiting my portfolio!
